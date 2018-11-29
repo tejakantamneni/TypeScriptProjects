@@ -1,0 +1,20 @@
+{
+  "name": "TypeScriptProjects",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Teja Kantamneni",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha -r ts-node/register tests/**/*.test.ts",
+    "testWithCoverage": "nyc -r lcov -e .ts -x \"*.test.ts\" mocha -r ts-node/register tests/**/*.test.ts && nyc report"
+},
+  "dependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6"
+  }
+}
